@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Most Popular Temple</title>
+  <link rel="icon" type="image/x-icon" href="logo1.jpeg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    body{
+      line-height: 1.6;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 20px;
+    }
+ul{
+  list-style-type: none 
+}
+.temple{
+  position: relative;
+  width: 50%;
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.temple:hover .image {
+  opacity: 0.3;
+}
+
+.temple:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #080908;
+  color: white;
+  font-size: 15px;
+  padding: 20px 30px;
+}
+h5 { 
+            display: flex; 
+            flex-direction: row; 
+        } 
+          
+        h5:before, 
+        h5:after { 
+            content: ""; 
+            flex: 1 1; 
+            border-bottom: 2px solid rgb(255, 255, 255);
+            margin: auto; 
+        } 
+          
+        .photo { 
+            height: 100px; 
+            width: 100px; 
+            border-radius: 50%; 
+        } 
+        img{
+  cursor: pointer;
+}
+  </style>
+</head>
+<body>
+  <header>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="photo\download.png" alt="Logo" style="width:60px;" class="rounded-circle"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="temple.html">Temple</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="link.html">Help</a>
+        </li>
+      </ul>
+    </div>
+    <form class="d-flex">
+      <input class="form-control me-2" type="text" placeholder="Search">
+      <button class="btn btn-primary" type="button">Search</button>
+    </form>
+    </div>
+  </nav>
+
+
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+      <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+    
+        <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="photo\Chennakeshava-Temple-Belur.jpg" alt="Chennakeshava-Temple-Belur" class="d-block" style=" height:500px; width:100%">
+        <div class="carousel-caption">
+          <h3>Chennakeshava-Temple</h3>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="photo\chamundeshwari-.jpg" alt="Chamundeshwari_Temple_Mysore" class="d-block"  style=" height:500px; width:100%">
+        <div class="carousel-caption">
+          <h3 class="text-dark">Chamundeshwari-Temple</h3>
+        </div> 
+      </div>
+      <div class="carousel-item">
+        <img src="photo\murudeshwar-temple-karnataka.jpg" alt="murudeshwar-temple-karnataka" class="d-block" style=" height:500px; width:100%">
+        <div class="carousel-caption">
+          <h3>Murudeshwar-Temple</h3>
+        </div>  
+      </div>
+    </div>
+  
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</header>
+<main>
+  <div class="container">
+  <h1 class="text-center mt-5">Temple</h1>
+  <div class="row m-3 p-3">
+    <div class="col-sm-9 p-3">
+  <p>A Hindu temple (or mandir, devasthana, pura, gudi, kovil' kovilamu', ambalam etc. in various languages) is a structure designed to bring Hindus and gods together through worship, sacrifice, and devotion, thought of as the house of the god to whom it is dedicated. The symbolism and structure of a Hindu temple are rooted in Vedic traditions, deploying circles and squares. It also represents recursion and the representation of the equivalence of the macrocosm and the microcosm by astronomical numbers, and by "specific alignments related to the geography of the place and the presumed linkages of the deity and the patron". A temple incorporates all elements of the Hindu cosmos — presenting the good, the evil and the human, as well as the elements of the Hindu sense of cyclic time and the essence of life — symbolically presenting dharma, artha, kama, moksha, and karma.</p></div>
+  <div class="col-sm-3 p-3" >
+    <div class="temple">
+  <img src="photo\Kedarnath_Temple.jpg" class="rounded" alt="Cinque Terre" width="350" height="250">
+  <div class="middle">
+    <div class="text">Kedarnath Temple</div>
+  </div>
+</div>
+  </div>
+  <p>The spiritual principles symbolically represented in Hindu temples are given in the ancient Sanskrit texts of India (for example, the Vedas and Upanishads), while their structural rules are described in various ancient Sanskrit treatises on architecture (Bṛhat Saṃhitā, Vāstu Śāstras). The layout, the motifs, the plan and the building process recite ancient rituals, geometric symbolisms, and reflect beliefs and values innate within various schools of Hinduism. A Hindu temple is a spiritual destination for many Hindus, as well as landmarks around which ancient arts, community celebrations and the economy have flourished.</p>
+
+  <p>Hindu temples come in many styles, are situated in diverse locations, deploy different construction methods and are adapted to different deities and regional beliefs, yet almost all of them share certain core ideas, symbolism and themes. They are found in South Asia, particularly India and Nepal, Bangladesh, Pakistan, Sri Lanka, in Southeast Asian countries such as Cambodia, Vietnam, Malaysia, and Indonesia, and countries such as Canada, Fiji, France, Guyana, Kenya, Mauritius, the Netherlands, South Africa, Suriname, Tanzania, Trinidad and Tobago, Uganda, the United Kingdom, the United States, and other countries with a significant Hindu population. The current state and outer appearance of Hindu temples reflect arts, materials and designs as they evolved over two millennia; they also reflect the effect of conflicts between Hinduism and Islam since the 12th century.The Swaminarayanan Akshardham in Robbinsville, New Jersey between the New York and Philadelphia metropolitan areas, was inaugurated in 2014 as one of the world's largest Hindu temples.</p>
+</div>
+<h2 class="text-center">Significance and meaning of a temple</h2>
+<div class="m-3 p-3">
+  <p>A Hindu temple reflects a synthesis of arts, the ideals of dharma, beliefs, values and the way of life cherished under Hinduism. It is a link between man, deities, and the Universal Puruṣa in a sacred space. It represents the triple-knowledge (trayi-vidya) of the Vedic vision by mapping the relationships between the cosmos (brahmaṇḍa) and the cell (pinda) by a unique plan based on astronomical numbers. Subhash Kak sees the temple form and its iconography to be a natural expansion of Vedic ideology related to recursion, change and equivalence.</p>
+  <p>In ancient Indian texts, a temple is a place of pilgrimage, known in India as a Tirtha. It is a sacred site whose ambience and design attempts to symbolically condense the ideal tenets of the Hindu way of life. In a Hindu temple, all the cosmic components that produce and maintain life are there, from fire to water, from depictions of the natural world to gods, from genders that are feminine or masculine to those that are everlasting and universal.</p>
+  <p>Susan Lewandowski states that the underlying principle in a Hindu temple is the belief that all things are one, that everything is connected. The pilgrim is welcomed through 64-grid or 81-grid mathematically structured spaces, a network of art, pillars with carvings and statues that display and celebrate the four important and necessary principles of human life – the pursuit of artha (prosperity, wealth), of kama (pleasure, sex), of dharma (virtues, ethical life) and of moksha (release, self-knowledge). At the centre of the temple, typically below and sometimes above or next to the deity, is mere hollow space with no decoration, symbolically representing Purusa, the Supreme Principle, the sacred Universal, one without form, which is omnipresent, connects everything, and is the essence of everyone. A Hindu temple is meant to encourage reflection, facilitate purification of one's mind, and trigger the process of inner realization within the devotee. The specific process is left to the devotee's school of belief. The primary deity of different Hindu temples varies to reflect this spiritual spectrum.</p>
+
+  <p>In Hindu tradition, there is no dividing line between the secular and the lonely sacred. In the same spirit, Hindu temples are not just sacred spaces; they are also secular spaces. Their meaning and purpose have extended beyond spiritual life to social rituals and daily life, offering thus a social meaning. Some temples have served as a venue to mark festivals, to celebrate arts through dance and music, to get married or commemorate marriages, the birth of a child, other significant life events or the death of a loved one. In political and economic life, Hindu temples have served as a venue for succession within dynasties and landmarks around which economic activity thrived.</p>
+</div>
+</div>
+</main>
+
+<footer>
+<div class="row m-3 p-3 bg-dark">
+<div class="text-white col-sm-4">
+  <h6>Company</h6>
+  <ul>
+ <li> <a href="link.html">About Us</a></li>
+<li><a href="link.html">Terms & Conditions</a></li>
+<li><a href="link.html">Privacy Policy</a></li>
+</ul>
+</div>
+  
+  <div class="text-white col-sm-4">
+    <h6>Help</h6>
+    <ul>
+      <li><a href="link.html">Contact Us</a></li>
+      <li><a href="link.html">Help</a></li>
+      <li><a href="link.html">Enquiry Form</a></li>
+    </ul>
+    </div>
+    <div class="text-white col-sm-4">
+    <h6 class="text-center">Members & Approved By</h6>
+    <img src="photo\round.png" alt="image" style=" height:100px; width:100px">
+    <img src="photo\round1.png" alt="image" style=" height:100px; width:100px">
+    <img src="photo\round2.png" alt="image" style=" height:100px; width:100px">
+    <img src="photo\round3.png" alt="image" style=" height:100px; width:100px">
+  </div>
+  
+  <h5><img class="photo" src="photo\face.png"  alt="logo" style=" height:50px; width:50px"></h5>
+    <span class="text-white text-center">&copy; Temple Info</span>
+</div>
+</footer>
+
+</body>
+</html>

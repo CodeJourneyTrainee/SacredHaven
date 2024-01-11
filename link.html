@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Most Popular Temple</title>
+  <link rel="icon" type="image/x-icon" href="logo1.jpeg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+  body {
+      line-height: 1.6;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 20px;
+  }
+  img{
+  cursor: pointer;
+}
+  h5 { 
+            display: flex; 
+            flex-direction: row; 
+        } 
+          
+        h5:before, 
+        h5:after { 
+            content: ""; 
+            flex: 1 1; 
+            border-bottom: 2px solid rgb(7, 7, 7);
+            margin: auto; 
+        } 
+          
+        .photo { 
+            height: 100px; 
+            width: 100px; 
+            border-radius: 50%; 
+        } 
+        button{
+          border: none;
+          border-radius: 25px;
+          box-shadow: 5px 5px grey;
+        }
+    
+  </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+  <div>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+   
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="photo\download.png" alt="Logo" style="width:60px;" class="rounded-circle"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="temple.html">Temple</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="link.html">Help</a>
+        </li>
+      </ul>
+    </div>
+    <form class="d-flex">
+      <input class="form-control me-2" type="text" placeholder="Search">
+      <button class="btn btn-primary" type="button">Search</button>
+    </form>
+    </div>
+  </nav>
+</div>
+
+
+<div id="help" class="container" style="padding:150px 20px;">
+  <h1 class="text-center">Help</h1>
+  <div class="row">
+    <div class="col-sm-4">
+      <div>
+  <h4>Contact Us</h4>
+  <p><a href = "mailto: temple89.@gmail">Send Email</a></p>
+  <p><strong>Phone No:123-456-7890</strong></p>
+  <address><strong>address:</strong>temple road,<br>
+     1<sup>st</sup> cross, <br>
+  Udupi.</address>
+</div>
+  <div>
+    <h4>Need Help?</h4>
+    <p>Support Timings Monday<br> to Saturday 10 am to 6 pm<br> Office related Enquiry -123-564-8970</p>
+  </div>
+  <div class="d-flex justify-content-around mt-5 ">
+    <div>
+    <div class="offcanvas offcanvas-bottom" id="demo">
+      <div class="offcanvas-header">
+        <h1 class="offcanvas-title">Terms & Conditions</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>These Terms of Use govern your use of all online and any other electronic services, including mobile application services, provided by or made available through Merriam-Webster, Incorporated (Merriam-Webster) that may be available from time to time (collectively, the "Services"), unless other terms and conditions expressly govern the Services. Please note, these Terms of Use are subject to other legal notices that appear on the Services, including our Privacy Policy located at https://www.merriam-webster.com/i/privacy-policy, which describes how we use and process the data we collect from our Services. Your use of the Services on and after the effective date of these Terms of Use is acceptance of these Terms of Use.</p>
+  
+      <p>THESE TERMS OF USE CONTAIN DISCLAIMERS OF WARRANTIES, LIMITATION OF LIABILITY, GOVERNING LAW, AND CLASS ACTION WAIVER PROVISIONS. THESE PROVISIONS AFFECT YOUR RIGHTS ABOUT HOW TO RESOLVE ANY DISPUTE WITH MERRIAM-WEBSTER. PLEASE READ THEM.</p>
+          
+    <p>Merriam-Webster offers three types of access to its Services: (1) advertising-supported; (2) individual and family consumer subscriptions; and (3) institutional subscriptions. Section 1 of these Terms of Use applies to all individuals who use our Services “ advertising-supported and subscription-based. Section 2 applies only to individuals with consumer subscriptions. Section 3 applies only to individuals who are Authorized Users under institutional subscriptions. Section 4 - legal notices “ applies to everyone</p>
+        <button class="btn btn-secondary" type="button">Continue</button>
+      </div>
+    </div>
+      <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+        Terms & Conditions
+      </button>
+    </div>
+
+    <div>
+      <button type="button" class="btn " id="toastbtn">Privacy Policy</button>
+    
+    <div class="toast">
+      <div class="toast-header">
+        <strong class="me-auto">Privacy Policy</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+      </div>
+      <div class="toast-body">
+        <p>We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy. <button class="btn btn-primary" type="button">Accept all </button></p></p>
+      </div>
+    </div>
+  </div>
+  
+    <div class="text-dark">
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">
+        About Us
+      </button>
+  
+    <div class="modal" id="myModal">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+    
+         
+          <div class="modal-header">
+            <h4 class="modal-title">About Us</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+    
+         
+          <div class="modal-body">
+            <p>The temple was originally established in a small wood framed house in San Francisco, California, way back in 1957, by an American born Hindu guru, Sivaya SubramuniyaSwami. It may have been the first Hindu Temple to be opened in America that was beyond the scope of the various Vedanta centers that existed at that time.</p>
+  
+          <p>Offering Pujas to murtis of Ganesha, Muruga and Shiva, it was founded on the traditions of Saiva Siddhanta and known as the Palaniswami Sivan Temple. It quickly became a popular site for the ever growing populace of newly arriving Hindus, some of whom personally knew of the Sage from Sri Lanka, YogaSwami, who initiated the American Guru. grow over the years, and on traditional festival days, the small temple could hardly accomodate the crowd of devotees. In 1988, to better facilitate the Hindu community, the temple was moved to a larger site in Concord, CA. The site was chosen due to availability and the fact that it had always been a place of worship.</p>
+              
+        <p> First owned by the Lutherans and later by the Greek Orthodox, structures on the site include the temple proper with a social hall in the basement, a separate building that's used as an office and classrooms, and a private residence for the Priests.</p>
+              
+      <p>Due to his efforts to build an orthodox temple on the island of Kauai, Hawaii, SubramuniyaSwami decided to sell the temple in Concord to the local Hindu Community in 1995. The Saiva Siddhanta Ashram was incorporated as a non-profit organization, purchased the temple in May, and changed the name to Shiva Murugan Temple.</p>
+              
+    <p>The Temple Management has, till date, brought three Priests from India to oversee the daily rituals. The first few years have been most generally spent in maintaining the buildings and a dependable schedule of religious events. The Board of Directors continues to look for ways to enhance the temple's services to the Hindu community by considering the expansion of Temple structure, religious and cultural services.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+  </div>
+    
+
+</div>
+</div>
+
+<div class="col-sm-8 bg-secondary">
+  <h4 class="text-center mt-3">Enquiry Form</h4>
+  <form>
+    <div class="mb-3 mt-3">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" required>
+    </div>
+    <div class="mb-3 mt-3">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="phone">Phone No:</label>
+      <input type="tel" id="phone" class="form-control" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+    </div>
+    <div class="mb-3 ">
+      <label for="comment">Comment box:</label>
+      <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+  
+</div>
+
+<h1 class="text-center m-2 p-5">Members & Approved By</h1>
+  <div class="text-center">
+    <img src="photo\round.png" alt="image" style=" height:100px; width:100px">
+    <img src="photo\round1.png" alt="image" style=" height:100px; width:100px">
+    <img src="photo\round2.png" alt="image" style=" height:100px; width:100px">
+    <img src="photo\round3.png" alt="image" style=" height:100px; width:100px">
+  </div>
+  <h5><img class="photo" src="photo\face.png"  alt="logo" style=" height:50px; width:50px"></h5>
+  <div class="text-center">&copy; Temple Info</div>
+</div>
+</div>
+
+
+
+
+<script>
+  document.getElementById("toastbtn").onclick = function() {
+    var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+    var toastList = toastElList.map(function(toastEl) {
+      return new bootstrap.Toast(toastEl)
+    })
+    toastList.forEach(toast => toast.show()) 
+  }
+  </script>
+</body>
+</html>
